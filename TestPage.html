@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -8,8 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="Path to flipclock\Resources\FlipClock-0.7.7/compiled/flipclock.css">
+
     <title>Hello, world!</title>
-    
+
 </head>
 <body>
 
@@ -27,7 +29,7 @@
                     <a class="nav-link" href="#">Images</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#AquaticServicesSection" >Services</a>
+                    <a class="nav-link" href="#AquaticServicesSection">Services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#Contact">Contact</a>
@@ -46,7 +48,7 @@
                     </div>
                 </li>
             </ul>
-          
+
         </div>
     </nav>
 
@@ -75,23 +77,23 @@
                     <span class="rounded my-auto mx-auto d-block">
                         <img src="https://dummyimage.com/200x200/c7c7c7/000000" class="card-img-top" alt="...">
                     </span>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title 2</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-success">Go somewhere</a>
-                        </div>
-</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-success">Go somewhere</a>
+                    </div>
+                </div>
             </div>
             <div class="col">
                 <div class="card">
                     <span class="rounded my-auto mx-auto d-block">
                         <img src="https://dummyimage.com/200x200/c7c7c7/000000" class="card-img-top" alt="...">
-                        </span>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title 3</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-danger">Go somewhere</a>
-                        </div>
+                    </span>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-danger">Go somewhere</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -142,35 +144,63 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action active">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">List group item heading</h5>
-                            <small>3 days ago</small>
+            <div class="col-md-5">
+                <div class="col">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">List group item heading</h5>
+                                <small>3 days ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            <small>Donec id elit non mi porta.</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">List group item heading</h5>
+                                <small class="text-muted">3 days ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            <small class="text-muted">Donec id elit non mi porta.</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">List group item heading</h5>
+                                <small class="text-muted">3 days ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            <small class="text-muted">Donec id elit non mi porta.</small>
+                        </a>
+                    </div>
+                </div>
+                <div class="col mt-3">
+                    <!-- <div class="col-md-4 col-sm-12">-->
+                    <div class="card">
+                        <h5 class="card-header">McDemo Featured</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Quick Timer</h5>
+                            <p class="card-text text-sm">
+                                <div class="clock" style="margin:2em;"></div>
+
+                            </p>
+                            <p class="card-text text-center">
+                                <button id="startbtn" type="button" class="btn btn-outline-success m-1">Start clock </button>
+                                <button id="stopbtn" type="button" class="btn btn-outline-warning m-1">Pause clock</button>
+                                <button id="resetbtn" type="button" class="btn btn-outline-danger m-1">Reset clock</button>
+
+                            </p>
+
                         </div>
-                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                        <small>Donec id elit non mi porta.</small>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">List group item heading</h5>
-                            <small class="text-muted">3 days ago</small>
+                        <div class="card-footer">
+                            <p class="text-center text-muted">
+                                <strong class="message"></strong>
+                            </p>
                         </div>
-                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                        <small class="text-muted">Donec id elit non mi porta.</small>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">List group item heading</h5>
-                            <small class="text-muted">3 days ago</small>
-                        </div>
-                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                        <small class="text-muted">Donec id elit non mi porta.</small>
-                    </a>
+                        <!--</div>-->
+                    </div>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <div class="border-left border-success h-50" style="background-color:lightgray;">
                     <p class="text-success text-center lead mb-5"><b>some title</b></p>
                     <p class="m-2">
@@ -202,16 +232,57 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
- 
+    
+    <footer class="mt-5">
+        <hr />
+        <p class="text-center">Footer Section</p>
+    </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
-  
+    <script src="Path to flickclock\Resources\FlipClock-0.7.7/compiled/flipclock.js"></script>
+    <script type="text/javascript">
+        var clock;
+        $(document).ready(function () {
+            clock = $('.clock').FlipClock(30, {
+                clockFace: 'MinuteCounter',
+                countdown: true,
+                autoStart: false,
+                callbacks: {
+                    start: function () {
+                        $('.message').html('The clock has started!');
+                    },
+                    stop: function () {
+                        $('.message').html('Pause the clock');
+                    },
+                    reset: function () {
+                        clock.setTime(30);
+                        $('.message').html('Reset!');
+                    }
+                }
+            });
+
+            $('#startbtn').click(function (e) {
+                // console.log("clicked");
+                clock.start();
+            });
+            $('#stopbtn').click(function (e) {
+                clock.stop();
+            });
+            $('#resetbtn').click(function (e) {
+                clock.reset();
+            });
+
+        });
+
+
+    </script>
+
 </body>
 
 </html>
